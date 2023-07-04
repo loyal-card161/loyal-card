@@ -1,0 +1,33 @@
+// копирайт в футере
+.copyright {
+  &__text {
+    .set-text(lato; 16px; 19.2px);
+    color: @dark-grey;
+  }
+
+  &__link {
+    text-decoration: none;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: @dark-grey;
+
+    @media (min-width: @tablet-width) {
+      width: 168px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 1.5px 0;
+  }
+
+  &__link:hover {
+    color: @basic-green;
+  }
+
+  &__link:active {
+    opacity: 0.3;
+    color: @basic-green;
+  }
+}
