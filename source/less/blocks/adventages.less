@@ -1,0 +1,123 @@
+// Преимущества
+.advantages {
+  .list-reset;
+  position: relative;
+
+  &__item {
+    font-size: 20px;
+    font-family: "Lato", "Arial", sans-serif;
+    line-height: 25px;
+    width: 120px;
+    position: absolute;
+    animation: word;
+    animation-fill-mode: forwards;
+    border-bottom: 1px solid #fcfcfc;
+    padding-bottom: 15px;
+    text-align: center;
+    height: 40px;
+
+    &:nth-child(1) {
+      top: -70px;
+      left: 20px;
+      animation-duration: 1s;
+
+      @media (max-width: 1220px) {
+        top: -55px;
+        padding-bottom: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      top: -70px;
+      left: 170px;
+      animation-duration: 1.3s;
+
+      @media (max-width: 1220px) {
+        top: -55px;
+        padding-bottom: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      top: 235px;
+      left: 20px;
+      animation-duration: 2.5s;
+      padding-bottom: 0;
+    }
+
+    &:nth-child(4) {
+      top: 220px;
+      left: 170px;
+      animation-duration: 2.2s;
+    }
+
+    &:nth-child(5) {
+      top: 20px;
+      left: -170px;
+      animation-duration: 3.1s;
+      text-align: left;
+
+      @media (max-width: 1220px) {
+        left: 20px;
+        top: 305px;
+        padding-bottom: 0;
+        text-align: center;
+      }
+    }
+
+    &:nth-child(6) {
+      left: -170px;
+      top: 120px;
+      animation-duration: 2.8s;
+      text-align: left;
+
+      @media (max-width: 1220px) {
+        left: 170px;
+        top: 290px;
+        text-align: center;
+      }
+    }
+
+    &:nth-child(7) {
+      top: 120px;
+      left: 368px;
+      animation-duration: 1.9s;
+      text-align: right;
+
+      @media (max-width: 1220px) {
+        left: 20px;
+        top: -120px;
+        text-align: center;
+      }
+    }
+
+    &:nth-child(8) {
+      left: 368px;
+      top: 20px;
+      animation-duration: 1.6s;
+      text-align: right;
+
+      @media (max-width: 1220px) {
+        left: 170px;
+        top: -105px;
+        padding-bottom: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@keyframes word {
+  0% {
+    color: transparent;
+    border: none;
+  }
+
+  10% {
+    color: transparent;
+  }
+
+  100% {
+    color: #f0f0f0;
+  }
+}
